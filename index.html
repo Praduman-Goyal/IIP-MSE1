@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Paglu - Campus Book Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Paglu</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Browse Books</a>
+            <a href="list-book.html">List a Book</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2 id="main-heading">Welcome to Book Paglu!</h2>
+            <p>Book Paglu is a campus book exchange where students can find affordable books or pass their old books on to someone else.</p>
+            <button id="heading-button" type="button">Change heading</button>
+        </section>
+
+        <section class="featured">
+            <div class="section-title">
+                <h2>Featured Books</h2>
+                <button id="toggle-button" type="button" aria-expanded="true">Hide books</button>
+            </div>
+
+            <div class="book-list" id="book-list">
+                <div class="book-card" id="first-book">
+                    <h3>Introduction to Algorithms</h3>
+                    <p><strong>Author:</strong> Thomas H. Cormen</p>
+                    <p><strong>Category:</strong> Computer Science</p>
+                    <button id="color-button" type="button">Change card colour</button>
+                </div>
+
+                <div class="book-card">
+                    <h3>The Alchemist</h3>
+                    <p><strong>Author:</strong> Paulo Coelho</p>
+                    <p><strong>Category:</strong> Fiction</p>
+                </div>
+
+                <article class="book-card">
+                    <h3>Calculus: Early Transcendentals</h3>
+                    <p><strong>Author:</strong> James Stewart</p>
+                    <p><strong>Category:</strong> Mathematics</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+:root {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f4f4f4;
+}
+
+body {
+    width: 100%;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: rgb(237, 237, 148);
+
+}
+
+header {
+    padding: 10px 0;
+    border-bottom: 2px solid #315b43;
+}
+
+header h1 {
+    margin: 0 0 12px;
+    color: #315b43;
+}
+
+nav a {
+    margin-right: 18px;
+    color: #234b35;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.welcome,
+.featured {
+    margin-bottom: 28px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    
+}
+
+.book-card {
+    flex: 1 1 220px;
+    padding: 14px;
+    border: 1px solid black;
+     background-color: #eafcbb;
+   
+}
+
+.book-card h3 {
+    margin-top: 0;
+}
+
+.book-card p {
+    margin: 8px 0;
+}
+
+.book-card .request-message {
+    color: #234b35;
+    font-weight: bold;
+}
+
+.show-book {
+    margin: 28px 0;
+    padding: 16px;
+    border: 1px solid #bbb;
+    background-color: white;
+}
+
+.listing-section {
+    margin: 28px 0;
+    padding: 16px;
+    border: 1px solid #bbb;
+    background-color: white;
+}
+
+.listing-section .section-title {
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    background-color: #eafcbb;
+}
+
+#listing-form {
+    margin-top: 16px;
+    background-color: #eafcbb;
+}
+
+.form-field {
+    margin-bottom: 14px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-container {
+    width: 100%; 
+    heigth: 100%;
+    padding: 10px;  
+    border: 1px solid #ccc;
+    background-color: #e0f3af;
+    
+}
+
+.form-field input,
+.form-field select {
+    width: min(100%, 420px);
+    padding: 8px;
+    border: 1px solid #999;
+    font: inherit;
+}
+
+#form-message {
+    margin: 14px 0 0;
+}
+
+#form-message.error {
+    color: #a12622;
+}
+
+#form-message.success {
+    color: #234b35;
+    font-weight: bold;
+}
+
+.show-book label,
+.show-book input {
+    margin-right: 8px;
+}
+
+.show-book input {
+    max-width: 100%;
+    padding: 7px;
+}
+
+#book-result {
+    margin-bottom: 0;
+    color: #234b35;
+}
+
+button {
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    .section-title {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0;
+    }
+}

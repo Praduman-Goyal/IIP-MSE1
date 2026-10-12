@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Books - Book Paglu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Paglu</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="books.html" aria-current="page">Browse Books</a>
+            <a href="list-book.html">List a Book</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Books to exchange or share</h2>
+            <p>These books are offered by students. Choose a book to send a request to its owner.</p>
+        </section>
+
+        <section class="featured" aria-labelledby="books-heading">
+            <h2 id="books-heading">Available books</h2>
+            <div class="book-list">
+                <article class="book-card" id="book-algorithms">
+                    <h3>Introduction to Algorithms</h3>
+                    <p><strong>Author:</strong> Thomas H. Cormen</p>
+                    <p><strong>Subject:</strong> Computer Science</p>
+                    <p><strong>Condition:</strong> Good</p>
+                    <p>Available to exchange</p>
+                    <button class="request-button" type="button">Mark as Requested</button>
+                    <p class="request-message" aria-live="polite"></p>
+                </article>
+
+                <article class="book-card" id="book-alchemist">
+                    <h3>The Alchemist</h3>
+                    <p><strong>Author:</strong> Paulo Coelho</p>
+                    <p><strong>Subject:</strong> Fiction</p>
+                    <p><strong>Condition:</strong> Like new</p>
+                    <p>Available to share</p>
+                    <button class="request-button" type="button">Mark as Requested</button>
+                    <p class="request-message" aria-live="polite"></p>
+                </article>
+
+                <article class="book-card" id="book-calculus">
+                    <h3>Calculus: Early Transcendentals</h3>
+                    <p><strong>Author:</strong> James Stewart</p>
+                    <p><strong>Subject:</strong> Mathematics</p>
+                    <p><strong>Condition:</strong> Acceptable</p>
+                    <p>Available to exchange</p>
+                    <button class="request-button" type="button">Mark as Requested</button>
+                    <p class="request-message" aria-live="polite"></p>
+                </article>
+
+                <article class="book-card" id="book-biology">
+                    <h3>Campbell Biology</h3>
+                    <p><strong>Author:</strong> Lisa A. Urry</p>
+                    <p><strong>Subject:</strong> Biology</p>
+                    <p><strong>Condition:</strong> Good</p>
+                    <p>Available to share</p>
+                    <button class="request-button" type="button">Mark as Requested</button>
+                    <p class="request-message" aria-live="polite"></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="show-book">
+            <h2>Look up a book title</h2>
+            <label for="book-title">Enter a book title:</label>
+            <input id="book-title" type="text" placeholder="Book title">
+            <button id="show-book-button" type="button">Show Book</button>
+            <p id="book-result" aria-live="polite"></p>
+        </section>
+
+        <button id="change-card-button" type="button">Highlight first book</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
